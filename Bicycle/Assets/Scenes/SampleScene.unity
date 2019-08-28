@@ -436,7 +436,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: -100, y: 100}
-  m_SizeDelta: {x: 250, y: 250}
+  m_SizeDelta: {x: 128, y: 128}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &1498981190
 MonoBehaviour:
@@ -450,6 +450,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc4f8437c24277c43ace32a6f16d8a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Pressed: 0
+  _myscript: {fileID: 2109683740}
 --- !u!114 &1498981191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -862,7 +864,13 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 64
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 2929252283123773951, guid: aaa2c939c0359ac4dbce3f49e8b90252,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 50396116295243560, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
 --- !u!1 &2092953460
 GameObject:
@@ -994,6 +1002,10 @@ MonoBehaviour:
   speed: 3
   thrust: 200
   doubleJumpPower: 100
+  ground: 0
+  Jump: 0
+  doubleJump: 0
+  doubleJumpCheck: 0
 --- !u!136 &2109683742
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1008,21 +1020,6 @@ CapsuleCollider:
   m_Height: 1.5
   m_Direction: 1
   m_Center: {x: 0, y: 0.75, z: 0}
---- !u!114 &2109683743
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2109683738}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a72beb1e393dbb4ba7a660fd6812883, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 3
-  thrust: 200
-  doubleJumpPower: 100
 --- !u!114 &2109683744
 MonoBehaviour:
   m_ObjectHideFlags: 0
